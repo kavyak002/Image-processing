@@ -1,0 +1,15 @@
+rows = int(input("Enter the number of rows:"))  
+for i in range(rows):
+    for j in range(i):
+        print(' ',end=' ')
+    for j in range(2*(rows-i)-1):
+        print(chr(69-i),end=' ')
+    print(' ')
+    
+OUTPUT:
+Enter the number of rows:5
+ E E E E E E E E E  
+  D D D D D D D  
+    C C C C C  
+      B B B  
+        A  
